@@ -34,6 +34,11 @@
                     font-size: 28px;
                     font-family: $DEFAULT_FONT;
                     margin-bottom: 15px;
+                    transition: color 1s,  background-color 1s;
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                    }
                 }
             }
             .dif-login {
@@ -45,7 +50,13 @@
                     height: 80px;
                     background-color: white;
                     background-position: center;
-                    background-size: cover;
+                    background-size: 65%;
+                    background-repeat: no-repeat;
+                    transition: width 1s, height 1s;
+                    &:hover {
+                        width: 90px;
+                        height: 90px;
+                    }
                 }
             }
         }
