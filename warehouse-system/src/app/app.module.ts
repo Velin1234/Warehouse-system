@@ -9,10 +9,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-import { AngularFireModule } from '@angular/fire/compat'
+import { AngularFireModule } from '@angular/fire/compat';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { LoginComponent } from './login/login.component';
+import { MatInputModule } from '@angular/material/input';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +27,8 @@ import { AngularFireModule } from '@angular/fire/compat'
     MatMenuModule,
     MatToolbarModule,
     MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
     AngularFireModule.initializeApp(
       {
         apiKey: "AIzaSyAMgzpt2SfYntZTgxd67fKBMPBoukyg3C0",
@@ -39,7 +45,8 @@ import { AngularFireModule } from '@angular/fire/compat'
     MatMenuModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule
   ],
   providers: [FirebaseService],
   bootstrap: [AppComponent]
