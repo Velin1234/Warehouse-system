@@ -32,9 +32,11 @@ $warehouse-system-theme: mat.define-light-theme((
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($warehouse-system-theme);
+$DEFAULT_FONT : 'Poppins', sans-serif;
 
 body{
     margin: 0px;
-    font-family: 'Poppins', sans-serif;
+    font-family: $DEFAULT_FONT; 
+    background-color: rgb(220, 220, 220);
 }
 html, body { height: 100%; }

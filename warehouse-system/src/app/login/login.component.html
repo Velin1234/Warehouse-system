@@ -1,0 +1,32 @@
+<div class="login-container">
+  <div class="inputs">
+    <div class="boxes">
+      <span>Login</span>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="example@email.com">
+        <mat-icon matSuffix>email</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Your password" [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <button mat-raised-button class="submit-button">Login</button>
+    </div>
+    <div class="dif-login">
+      <button mat-fab [style.background-image]="'url(assets/imgs/social-logos/googleLogo.png)'">
+      </button>
+      <button mat-fab [style.background-image]="'url(assets/imgs/social-logos/facebookLogo.png)'">
+      </button>
+      <button mat-fab [style.background-image]="'url(assets/imgs/social-logos/microsoftLogo.png)'">
+      </button>
+    </div>
+  </div>
+</div>

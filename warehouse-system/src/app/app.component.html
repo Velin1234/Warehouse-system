@@ -30,17 +30,14 @@
             </div>
             <div class="nav-items">
                 <a routerLink="/">Home</a>
-                <a href="">Login</a>
+                <a routerLink="/login" routerLinkActive="activebutton">Login</a>
                 <a href="">Register</a>
             </div>
         </li>
     </ul>
 </nav>
-<content>
-</content>
-
+    <router-outlet></router-outlet>
 <footer>
     <span>Warehouse system</span>
     <p class="copyright">© Warehouse System. All Rights Reserved.</p>
 </footer>
-<router-outlet></router-outlet>
