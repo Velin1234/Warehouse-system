@@ -1,2 +1,3 @@
-# warehouse-system
-Warehouse web site , which main goal is angular learning. 
+# Warehouse-system
+Warehouse web site , which main goal is
+to act as a warehouse system for items. 
