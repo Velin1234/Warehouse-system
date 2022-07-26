@@ -10,6 +10,7 @@
         background-color: #cbcbcb;
         margin-top: 35px;
         border-radius: 35px;
+        box-shadow: 2px 2px 2px 2px grey;
         .inputs {
             width: 80%;
             .boxes {
@@ -21,6 +22,12 @@
                 border-bottom: white dotted;
                 span {
                     font-size: 48px;
+                    -webkit-touch-callout: none;
+                    -webkit-user-select: none;
+                    -khtml-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
                 }
                 mat-form-field {
                     width: 100%;
@@ -34,7 +41,7 @@
                     font-size: 28px;
                     font-family: $DEFAULT_FONT;
                     margin-bottom: 15px;
-                    transition: color 1s,  background-color 1s;
+                    transition: color 1s, background-color 1s;
                     &:hover {
                         background-color: black;
                         color: white;

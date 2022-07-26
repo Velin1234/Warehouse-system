@@ -29,14 +29,14 @@
                 </mat-menu>
             </div>
             <div class="nav-items">
-                <a routerLink="/">Home</a>
-                <a routerLink="/login" routerLinkActive="activebutton">Login</a>
-                <a routerLink="/register" routerLinkActive="activebutton">Register</a>
+                <a routerLink="/" routerLinkActive="active-page" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+                <a routerLink="/login" routerLinkActive="active-page">Login</a>
+                <a routerLink="/register" routerLinkActive="active-page">Register</a>
             </div>
         </li>
     </ul>
 </nav>
-    <router-outlet></router-outlet>
+<router-outlet></router-outlet>
 <footer>
     <span>Warehouse system</span>
     <p class="copyright">© Warehouse System. All Rights Reserved.</p>
