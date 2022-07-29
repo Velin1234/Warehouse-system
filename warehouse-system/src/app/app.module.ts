@@ -15,12 +15,14 @@ import { LoginComponent } from './login/login.component';
 import { MatInputModule } from '@angular/material/input';
 import { RegisterComponent } from './register/register.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
