@@ -1,0 +1,81 @@
+nav {
+    width: 100vw;
+    height: 120px;
+    background-color: rgb(50, 100, 100);
+    color: white;
+    font-size: 24px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    ul {
+        margin: 0%;
+        padding: 0%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        .logo-contents {
+            text-decoration: none;
+            div {
+                display: flex;
+                align-items: center;
+                padding-left: 30px;
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+                span {
+                    color: white;
+                    padding-top: 10px;
+                    padding-left: 15px;
+                    font-size: 32px;
+                }
+            }
+        }
+
+        .nav-content {
+            display: flex;
+
+            @media screen and (max-width: 800px) {
+                .resp-nav-items {
+                    display: block !important;
+                    padding-top: 10px;
+                    padding-right: 30px;
+                    mat-icon {
+                        font-size: 40px;
+                    }
+                }
+                .nav-items {
+                    display: none !important;
+                }
+            }
+            .resp-nav-items {
+                display: none;
+            }
+            .nav-items {
+                display: flex;
+                gap: 20px;
+                padding-right: 30px;
+                padding-top: 10px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+                .active-page {
+                    background-color: #2d4c4c;
+                    border-radius: 25%;
+                    color: beige;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
