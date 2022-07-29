@@ -1,26 +1,16 @@
-import { FirebaseService } from './services/firebase.service';
+import { FirebaseService } from './shared/services/firebase.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
 import { AngularFireModule } from '@angular/fire/compat';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { LoginComponent } from './login/login.component';
-import { MatInputModule } from '@angular/material/input';
-import { RegisterComponent } from './register/register.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { FooterComponent } from './footer/footer.component';
+import { NavMenuComponent } from './shared/components/nav-menu/nav-menu.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { SharedModule } from './shared/modules/shared.module';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    RegisterComponent,
     NavMenuComponent,
     FooterComponent
   ],
@@ -28,13 +18,7 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule,
-    MatButtonModule,
-    MatMenuModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatFormFieldModule,
-    MatInputModule,
+    SharedModule,
     AngularFireModule.initializeApp(
       {
         apiKey: "AIzaSyAMgzpt2SfYntZTgxd67fKBMPBoukyg3C0",
@@ -45,14 +29,6 @@ import { FooterComponent } from './footer/footer.component';
         appId: "1:973493558314:web:4e89d6bfb6da07d0c5f753",
         measurementId: "G-RKXLSV6KB1"
       })
-  ],
-  exports: [
-    MatButtonModule,
-    MatMenuModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatCardModule,
-    MatFormFieldModule
   ],
   providers: [FirebaseService],
   bootstrap: [AppComponent]
